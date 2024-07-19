@@ -1,0 +1,24 @@
+.blue-gradient-text {
+    background: linear-gradient(to bottom, #00B4EC, #2B3087);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #2B3087;
+    border-radius: 10px;
+    border: 3px solid #00B4EC;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #1E2A6A;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
