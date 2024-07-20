@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply overflow-x-hidden font-poppin;
+    @apply overflow-x-hidden font-poppin bg-dark relative;
   }
 
   .transitions {
@@ -19,11 +19,10 @@
 
   .btn-success {
     @apply border-2 border-success bg-success shadow-success !text-white transition-all duration-300 ease-in-out capitalize font-semibold px-[40px] h-[50px] rounded-full hover:text-white hover:scale-105;
-
   }
 
   h1 {
-    @apply text-[48px] font-semibold leading-[55px] text-white font-poppin;
+    @apply text-[45px] font-semibold leading-[55px] text-white font-poppin;
   }
 
   h2 {
