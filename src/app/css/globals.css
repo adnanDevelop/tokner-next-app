@@ -22,7 +22,7 @@
   }
 
   h1 {
-    @apply text-[45px] font-semibold leading-[55px] text-white font-poppin;
+    @apply xl:text-[45px] lg:text-[40px] md:text-[30px] text-[28px] font-semibold lg:leading-[55px] leading-9 text-white font-poppin;
   }
 
   h2 {
@@ -30,6 +30,6 @@
   }
 
   p {
-    @apply text-[16px] font-extralight leading-[24px];
+    @apply text-base font-extralight leading-[24px];
   }
 }
