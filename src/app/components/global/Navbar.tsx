@@ -1,12 +1,26 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { GrClose } from "react-icons/gr";
 
 const Navbar = () => {
-  const [openHamburger, setOpenHamburger] = useState(false);
   const [showSidebar, setOpenShideBar] = useState(false);
+  const [openHamburger, setOpenHamburger] = useState(false);
+  const [scrollAnimation, setScrollAnimation] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      window.scrollY > 50
+        ? setScrollAnimation(true)
+        : setScrollAnimation(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const openSideBar = () => {
     setOpenHamburger(!openHamburger);
@@ -14,10 +28,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full relative">
+    <nav className={`w-full relative transitions`}>
       {/* Large screen navbar */}
-      <div className="lg:block hidden">
-        <div className="w-full px-[30px] py-[30px] flex items-center justify-between fixed top-0 left-0 z-[10]">
+      <div className={`lg:block hidden w-full z-10 `}>
+        <div
+          className={`w-full transitions px-[30px] py-[20px] flex items-center justify-between fixed top-0 left-0 z-[10]  ${
+            scrollAnimation ? "!bg-light-blue " : "!bg-transparent "
+          }`}
+        >
           {/* Logo */}
           <div>
             <Image
@@ -52,7 +70,11 @@ const Navbar = () => {
 
       {/* Small screen navbar */}
       <div className="lg:hidden block  relative">
-        <div className="w-full flex items-center justify-between fixed top-0 left-0 z-[10] p-[25px]  ">
+        <div
+          className={`w-full flex items-center justify-between fixed top-0 left-0 z-[10] p-[25px] transitions ${
+            scrollAnimation ? "!bg-light-blue " : "!bg-transparent "
+          }`}
+        >
           {/* Logo */}
           <div>
             <Image
