@@ -23,6 +23,8 @@ const config: Config = {
       boxShadow: {
         success: " 0px 3px 10px 0px rgba(34, 167, 93, 0.11)",
         blue: " 0px 3px 10px 0px rgba(34, 120, 212, 0.11)",
+        warning: " 0px 3px 10px 0px rgba(34, 120, 212, 0.11)",
+        danger: " 0px 3px 10px 0px rgba(34, 120, 212, 0.11)",
       },
       fontFamily: {
         poppin: ["Poppins", "sans-serif"],

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <main className="w-full grid grid-cols-12 gap-4  bg-dark relative 2xl:pt-[180px] xl:pt-[150px] md:pt-[100px] pt-[80px] 2xl:pb-[100px] md:pb-[80px] z-[1] px-[25px]">
+    <main className="w-full grid grid-cols-12 gap-4 bg-dark relative 2xl:pt-[180px] xl:pt-[150px] md:pt-[100px] pt-[80px] 2xl:pb-[100px] md:pb-[80px] z-[1] px-[25px]">
       <img
         src="/image/bg-img.png"
         className="xl:max-w-[1100px] max-w-[600px] h-auto block absolute top-0 right-0 z-[-1]"
