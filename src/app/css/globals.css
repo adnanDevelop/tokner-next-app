@@ -14,11 +14,11 @@
   }
 
   .btn-outline-success {
-    @apply border-2 border-success bg-transparent text-white transition-all duration-300 ease-in-out capitalize font-semibold max-w-[150px] w-full h-[50px] rounded-full hover:bg-success hover:text-white hover:scale-105;
+    @apply border-2 border-success bg-transparent text-white transition-all duration-300 ease-in-out capitalize font-semibold max-w-[150px] w-full h-[45px] text-[15px] rounded-full hover:bg-success hover:text-white hover:scale-105;
   }
 
   .btn-success {
-    @apply border-2 border-success bg-success shadow-success !text-white transition-all duration-300 ease-in-out capitalize font-semibold px-[40px] h-[50px] rounded-full hover:text-white hover:scale-105;
+    @apply border-2 border-success bg-success shadow-success !text-white transition-all duration-300 ease-in-out capitalize font-semibold px-[40px] h-[45px] text-[15px] rounded-full hover:text-white hover:scale-105;
   }
 
   h1 {

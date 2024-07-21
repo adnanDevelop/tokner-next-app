@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="w-full relative">
       {/* Large screen navbar */}
       <div className="lg:block hidden">
-        <div className="w-full px-[40px] py-[30px] flex items-center justify-between fixed top-0 left-0 z-[10]">
+        <div className="w-full px-[30px] py-[30px] flex items-center justify-between fixed top-0 left-0 z-[10]">
           {/* Logo */}
           <div>
             <Image
